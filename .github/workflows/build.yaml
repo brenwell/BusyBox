@@ -2,6 +2,8 @@ name: buildx
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   buildx:
@@ -23,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: yourusername/yourimage:latest
+          tags: brenwell/busybox:latest
           platforms: linux/amd64,linux/arm64,linux/ppc64le
