@@ -7,3 +7,9 @@ Thank you to :
     the creators of HTTPie: https://httpie.org/
     Yusuke Nojima for creating a Go version of HTTPie: https://github.com/nojima/httpie-go
     Joncrlson for the original version: https://github.com/joncrlsn/busybox
+
+Example usage
+
+```sh
+docker run -it brenwell/busybox http GET httpbin.org/json
+```
