@@ -17,4 +17,4 @@ COPY --from=certs /etc/ssl/certs /etc/ssl/certs
 # Verify SSL certificates
 ENV SSL_CERT_DIR=/etc/ssl/certs
 
-CMD ["/bin/http"]
+CMD ["/sh"]
